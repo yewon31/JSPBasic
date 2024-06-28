@@ -106,7 +106,7 @@ public class DepartmentDAO {
 			pstmt.setInt(1, department_id); //?값 채움
 			rs = pstmt.executeQuery(); //select구문의 실행
 			
-			while(rs.next()) { //다음이 있으면 true
+			if(rs.next()) { //다음이 있으면 true
 				
 				//1행에 대한 처리
 				int departmentId = rs.getInt("department_id"); //컬럼명
