@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%
+	String id = (String)request.getParameter("id");
 	//중간에 setAttr 저장한 데이터는 getAttr 얻음
 	String name = (String)request.getAttribute("name");
 
@@ -14,7 +15,7 @@
 <body>
 	
 	<h3>포워드04 페이지</h3>
-	서블릿에서 넘어온 데이터:<%=name %>
+	서블릿에서 넘어온 데이터 : <%=id %> (<%=name %>)
 	
 	
 </body>
