@@ -13,7 +13,7 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
-@WebServlet("*.ajax") // .ajax로 끝나는 요청
+@WebServlet("*.ajax")
 public class AjaxController extends HttpServlet {
 
 	@Override

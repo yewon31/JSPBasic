@@ -7,7 +7,6 @@
 </head>
 <body>
 
-
 	<button type="button" onclick="get()">get방식 ajax요청</button>
 
 	<script>
